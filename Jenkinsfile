@@ -5,7 +5,7 @@ stages {
     stage('Checkout') {
        steps {
          echo "CheckOut"  
-         git credentialsId: '99c56ce6-094e-42d6-be23-79c9c8e1da40', url: 'https://github.com/ravinawale/helloworld.git', branch: 'main'
+         git credentialsId: 'githubcred', url: 'https://github.com/ravinawale/helloworld.git', branch: 'main'
        }
     }
     stage('Build') {
